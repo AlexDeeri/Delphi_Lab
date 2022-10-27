@@ -33,25 +33,25 @@ begin
   AssignFile(f, outputPATH);
   Rewrite(f);
 
-  WriteLn(f, 'Лаб. 5':50);
+  WriteLn(f, 'Р›Р°Р±. 5':50);
 
   WriteLn(f);
 
-  WriteLn(f, 'Размер массива N = ', N);
+  WriteLn(f, 'Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР° N = ', N);
 
   WriteLn(f);
 
-  WriteLn(f, 'Исходный массив А:');
+  WriteLn(f, 'РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ Рђ:');
 
  For i:=1 to N do
  begin
    Write(f, ' ');
-   WriteLn(f, 'А[', i, '] = ', A[i]);
+   WriteLn(f, 'Рђ[', i, '] = ', A[i]);
  end;
 
   WriteLn(f);
 
-  //Метод Пузырька - НАЧАЛО
+  //РњРµС‚РѕРґ РџСѓР·С‹СЂСЊРєР° - РќРђР§РђР›Рћ
                               {
   for j := N downto 2 do  begin
     For i := 2 to j do begin
@@ -64,14 +64,14 @@ begin
 
     WriteLn('Step ', N-j+1, ':');
     For i := 1 to N do begin
-      WriteLn(' А[', i, '] = ', A[i]);
+      WriteLn(' Рђ[', i, '] = ', A[i]);
     end;
     WriteLn;
   end;
              }
-  //Метод Пузырька - КОНЕЦ
+  //РњРµС‚РѕРґ РџСѓР·С‹СЂСЊРєР° - РљРћРќР•Р¦
 
-  //Метод выбора - НАЧАЛО
+  //РњРµС‚РѕРґ РІС‹Р±РѕСЂР° - РќРђР§РђР›Рћ
 
   for j := N downto 2 do  begin
     k := j;
@@ -89,19 +89,19 @@ begin
 
     WriteLn('Step ', N-j+1, ':');
     For i := 1 to N do begin
-      WriteLn(' А[', i, '] = ', A[i]);
+      WriteLn(' Рђ[', i, '] = ', A[i]);
     end;
     WriteLn;
   end;
 
-  //Метод выбора - КОНЕЦ
+  //РњРµС‚РѕРґ РІС‹Р±РѕСЂР° - РљРћРќР•Р¦
 
-  WriteLn(f, 'Обработанный массив А:');
+  WriteLn(f, 'РћР±СЂР°Р±РѕС‚Р°РЅРЅС‹Р№ РјР°СЃСЃРёРІ Рђ:');
 
   For i:=1 to N do
   begin
     Write(f, ' ');
-    WriteLn(f, 'А[', i, '] = ', A[i]);
+    WriteLn(f, 'Рђ[', i, '] = ', A[i]);
   end;
 
   WriteLn('PRESS Enter to exit');
